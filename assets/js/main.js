@@ -1,15 +1,15 @@
-document.addEventListener('submit', (event) => {
-  const form = event.target;
-  if (!form.matches('[data-mail-form]')) return;
-  event.preventDefault();
+// Lightweight enhancements for static replica
+(function () {
+  // Remove Wix ad header entirely.
+  var ad = document.getElementById('WIX_ADS');
+  if (ad && ad.parentNode) {
+    ad.parentNode.removeChild(ad);
+  }
 
-  const name = (form.querySelector('[name="name"]')?.value || '').trim();
-  const email = (form.querySelector('[name="email"]')?.value || '').trim();
-  const message = (form.querySelector('[name="message"]')?.value || '').trim();
-
-  if (!email || !message) return;
-
-  const subject = encodeURIComponent(`Portfolio message from ${name || 'visitor'}`);
-  const body = encodeURIComponent(`Name: ${name || '-'}\nEmail: ${email}\n\n${message}`);
-  window.location.href = `mailto:harini.avs1@gmail.com?subject=${subject}&body=${body}`;
-});
+  // No backend: keep forms client-only.
+  document.addEventListener('submit', function (event) {
+    var form = event.target;
+    if (!form || form.tagName !== 'FORM') return;
+    event.preventDefault();
+  }, true);
+})();

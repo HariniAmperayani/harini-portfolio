@@ -1,0 +1,21 @@
+/* Keep SingleFile rendering, only adjust/clean behavior for static replica */
+#WIX_ADS {
+  display: none !important;
+}
+
+#site-root {
+  top: 0 !important;
+}
+
+/* keep form usable without Wix backend */
+input,
+textarea,
+button {
+  pointer-events: auto !important;
+}
+
+/* minor layout safety for local static rendering */
+html,
+body {
+  min-height: 100%;
+}
