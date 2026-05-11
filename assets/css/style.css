@@ -274,6 +274,90 @@ p {
   margin-bottom: 8px;
 }
 
+.work-page {
+  padding-bottom: 0;
+}
+
+.work-layout .container {
+  width: min(830px, calc(100% - 48px));
+}
+
+.work-title {
+  margin: 40px 0 48px;
+  font-size: 25px;
+  line-height: 1.2;
+  font-weight: 700;
+}
+
+.work-card {
+  width: min(720px, 100%);
+  margin: 0 auto;
+  padding: 14px 24px 15px 48px;
+  display: grid;
+  grid-template-columns: 230px 1fr;
+  align-items: center;
+  gap: 48px;
+  background: rgba(255, 255, 255, 0.72);
+}
+
+.work-page .footer-line {
+  margin-top: 160px;
+}
+
+.frugal-logo {
+  width: 216px;
+  aspect-ratio: 1;
+  display: grid;
+  place-items: center;
+  border-radius: 44px;
+  background: #646a70;
+}
+
+.frugal-logo h2 {
+  margin: 0;
+  color: #fff;
+  font-family: Montserrat, "Avenir Next", Avenir, "Segoe UI", system-ui, sans-serif;
+  font-size: 56px;
+  line-height: 1;
+  font-weight: 700;
+  letter-spacing: 0;
+}
+
+.frugal-logo span {
+  color: #4caf50;
+}
+
+.work-copy {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  column-gap: 18px;
+  align-items: end;
+}
+
+.work-copy p:first-child {
+  grid-column: 1 / -1;
+  max-width: 360px;
+  margin: 0 0 8px;
+  font-size: 19px;
+  line-height: 1.45;
+  letter-spacing: 0.04em;
+}
+
+.work-note {
+  justify-self: end;
+  margin: 0;
+  font-size: 13px;
+  font-style: italic;
+}
+
+.read-more {
+  grid-column: 1;
+  grid-row: 2;
+  align-self: end;
+  color: #8b0000;
+  font-size: 13px;
+}
+
 .case-hero {
   display: grid;
   grid-template-columns: minmax(0, 1fr) 300px;
@@ -433,6 +517,28 @@ textarea:focus {
   .case-gallery.app-screens {
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
+
+  .work-card {
+    grid-template-columns: 1fr;
+    justify-items: center;
+    gap: 26px;
+    padding: 28px;
+  }
+
+  .work-copy {
+    display: block;
+    width: 100%;
+    text-align: left;
+  }
+
+  .work-copy p:first-child {
+    max-width: none;
+  }
+
+  .work-note {
+    text-align: right;
+    margin-bottom: 6px;
+  }
 }
 
 @media (max-width: 620px) {
@@ -502,5 +608,24 @@ textarea:focus {
   .text-link {
     justify-content: center;
     width: 100%;
+  }
+
+  .work-title {
+    margin-top: 34px;
+    margin-bottom: 30px;
+  }
+
+  .frugal-logo {
+    width: min(216px, 100%);
+    border-radius: 36px;
+  }
+
+  .frugal-logo h2 {
+    font-size: clamp(44px, 15vw, 56px);
+  }
+
+  .work-copy p:first-child {
+    font-size: 17px;
+    line-height: 1.5;
   }
 }
