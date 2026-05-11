@@ -4,13 +4,16 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>My work | Harini</title>
+  <meta name="description" content="UX and UI projects by Harini Amperayani." />
   <link rel="stylesheet" href="assets/css/style.css" />
 </head>
 <body>
   <div class="page">
     <header>
       <div class="container top-nav">
-        <a href="index.html"><img class="brand-logo" src="assets/img/2.png" alt="Harini logo" /></a>
+        <a class="brand" href="index.html" aria-label="Harini home">
+          <img class="brand-logo" src="assets/img/2.png" alt="" />
+        </a>
         <nav class="menu" aria-label="Main">
           <a href="resume.html">Resume</a>
           <span class="pipe" aria-hidden="true"></span>
@@ -22,13 +25,48 @@
     </header>
 
     <main class="container">
-      <h1 class="section-title">My work</h1>
-      <section class="projects-card">
-        <h2>Frugal</h2>
-        <p>A simple finance app designed to help everyday users track expenses, set savings goals, and build sustainable financial habits.</p>
-        <p>A personal UX case study.</p>
-        <a class="btn" href="case-study-frugal.html">Read More</a>
+      <section class="page-heading">
+        <p class="eyebrow">Portfolio</p>
+        <h1 class="section-title">My work</h1>
+        <p>I gravitate toward projects that bring order to messy, information-heavy journeys. Here is where I am currently focused.</p>
       </section>
+
+      <section class="project-feature project-feature-large">
+        <div>
+          <p class="eyebrow">Case Study · UX + UI</p>
+          <h2>Frugal — finance made approachable.</h2>
+          <p>A simple budgeting companion designed to guide everyday users, not intimidate them with charts. I led research, defined the problem, prototyped flows in Figma, and ran usability testing with five participants.</p>
+          <ul class="plain-list">
+            <li>Role: UX Designer · Solo project</li>
+            <li>Focus: Guided learning, actionable tips, progressive goals</li>
+            <li>Outcome: Higher task clarity and navigation confidence during usability tests</li>
+          </ul>
+          <div class="action-row">
+            <a class="btn" href="case-study-frugal.html">Read more</a>
+            <a class="text-link" href="mailto:harini.avs1@gmail.com?subject=Frugal%20prototype%20request">Request prototype</a>
+          </div>
+        </div>
+        <div class="phone-preview" aria-label="Frugal app screen previews">
+          <img src="assets/img/Homepage.png" alt="Frugal homepage screen" />
+          <img src="assets/img/Goals.png" alt="Frugal goals screen" />
+          <img src="assets/img/Tips.png" alt="Frugal tips screen" />
+        </div>
+      </section>
+
+      <section class="content-section">
+        <div class="card-grid two-col">
+          <article class="mini-card">
+            <h3>What’s next</h3>
+            <p>I’m shaping additional case studies that pair UX research with React-based delivery. Reach out if you’d like a preview or want to collaborate.</p>
+          </article>
+          <article class="mini-card">
+            <h3>Need a UX partner?</h3>
+            <p>I enjoy joining teams early: defining the problem, sketching flows, facilitating workshops, and aligning with engineers on the details.</p>
+            <a class="text-link" href="contact.html">Start a conversation</a>
+          </article>
+        </div>
+      </section>
+
       <div class="footer-line"></div>
     </main>
 
@@ -38,9 +76,9 @@
           <span class="dot">•</span><a href="mailto:harini.avs1@gmail.com">Email</a>
           <span class="dot">•</span><a href="https://www.linkedin.com/in/harini-avs103/" target="_blank" rel="noreferrer noopener">LinkedIn</a>
         </div>
+        <p>© 2026 Harini Amperayani</p>
       </div>
     </footer>
   </div>
 </body>
 </html>
-

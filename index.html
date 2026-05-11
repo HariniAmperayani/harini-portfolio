@@ -4,14 +4,19 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Home | Harini</title>
+  <meta
+    name="description"
+    content="Portfolio for Harini Amperayani, a UI/UX designer with a background in digital advertising and front-end practice."
+  />
   <link rel="stylesheet" href="assets/css/style.css" />
-  <script defer src="assets/js/main.js"></script>
 </head>
 <body>
   <div class="page">
     <header>
       <div class="container top-nav">
-        <a href="index.html"><img class="brand-logo" src="assets/img/2.png" alt="Harini logo" /></a>
+        <a class="brand" href="index.html" aria-label="Harini home">
+          <img class="brand-logo" src="assets/img/2.png" alt="" />
+        </a>
         <nav class="menu" aria-label="Main">
           <a href="resume.html">Resume</a>
           <span class="pipe" aria-hidden="true"></span>
@@ -24,11 +29,55 @@
 
     <main class="container">
       <section class="hero">
-        <h1 class="hello">Hello</h1>
+        <div>
+          <p class="eyebrow">UI · UX · Front-end</p>
+          <h1 class="hello">Hello</h1>
+        </div>
         <div class="lead">
           <p><strong>I’m Harini Amperayani, a UI/UX Designer</strong> with a design approach rooted in clarity and empathy.</p>
-          <p><strong>I bring 7+ years of professional experience</strong>, with a background in digital advertising. Working closely with hundreds of websites sparked my interest in user experience and led me to transition into UI/UX design and front-end development. I’ve worked hands-on across UX and front-end projects, contributing to UI improvements and UX discussions focused on usability, structure, and clarity.</p>
-          <a class="btn" href="projects.html">See my work</a>
+          <p><strong>I bring 7+ years of professional experience</strong>, with a background in digital advertising. Working closely with hundreds of websites sparked my interest in user experience and led me to transition into UI/UX design and front-end development.</p>
+          <div class="action-row">
+            <a class="btn" href="projects.html">See my work</a>
+            <a class="text-link" href="mailto:harini.avs1@gmail.com">Email me</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="content-section">
+        <div class="section-copy">
+          <p class="eyebrow">Experience snapshot</p>
+          <h2>From campaign strategy to product experience.</h2>
+          <p>Programmatic advertising taught me how to evaluate digital experiences quickly. UX training sharpened how I rebuild them with intention, structure, and user clarity.</p>
+        </div>
+        <div class="card-grid">
+          <article class="mini-card">
+            <h3>Programmatic Lead → UX Designer</h3>
+            <p>Led campaigns for global brands, partnered with product, data, and creative teams, and learned what keeps users from converting.</p>
+          </article>
+          <article class="mini-card">
+            <h3>Front-end practice</h3>
+            <p>Built UI prototypes with HTML, CSS, JavaScript, and React basics, translating UX discussions into interface updates.</p>
+          </article>
+          <article class="mini-card">
+            <h3>UX research mindset</h3>
+            <p>Google UX certificate graduate with a focus on qualitative research, structured insights, and iterative prototyping.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="content-section">
+        <div class="project-feature">
+          <div>
+            <p class="eyebrow">Recent focus</p>
+            <h2>Frugal — everyday finance made simple.</h2>
+            <p>A UX case study exploring how guided design can help households feel confident about budgeting, saving goals, and financial habits.</p>
+            <a class="btn" href="case-study-frugal.html">Read the case study</a>
+          </div>
+          <div class="phone-preview" aria-label="Frugal app screen previews">
+            <img src="assets/img/Homepage.png" alt="Frugal homepage screen" />
+            <img src="assets/img/Goals.png" alt="Frugal goals screen" />
+            <img src="assets/img/Tips.png" alt="Frugal tips screen" />
+          </div>
         </div>
       </section>
 
@@ -41,9 +90,9 @@
           <span class="dot">•</span><a href="mailto:harini.avs1@gmail.com">Email</a>
           <span class="dot">•</span><a href="https://www.linkedin.com/in/harini-avs103/" target="_blank" rel="noreferrer noopener">LinkedIn</a>
         </div>
+        <p>© 2026 Harini Amperayani</p>
       </div>
     </footer>
   </div>
 </body>
 </html>
-

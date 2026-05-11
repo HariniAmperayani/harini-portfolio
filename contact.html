@@ -4,6 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Contact | Harini</title>
+  <meta name="description" content="Get in touch with Harini Amperayani for UX and UI collaboration." />
   <link rel="stylesheet" href="assets/css/style.css" />
   <script defer src="assets/js/main.js"></script>
 </head>
@@ -11,7 +12,9 @@
   <div class="page">
     <header>
       <div class="container top-nav">
-        <a href="index.html"><img class="brand-logo" src="assets/img/2.png" alt="Harini logo" /></a>
+        <a class="brand" href="index.html" aria-label="Harini home">
+          <img class="brand-logo" src="assets/img/2.png" alt="" />
+        </a>
         <nav class="menu" aria-label="Main">
           <a href="resume.html">Resume</a>
           <span class="pipe" aria-hidden="true"></span>
@@ -23,25 +26,33 @@
     </header>
 
     <main class="container">
-      <h1 class="section-title">Contact</h1>
+      <section class="page-heading">
+        <p class="eyebrow">Contact</p>
+        <h1 class="section-title">Let’s connect</h1>
+        <p>Whether you’re hiring for an associate UX role, need help shaping a product story, or want to discuss design systems, drop a note.</p>
+      </section>
+
       <section class="contact-wrap">
         <article class="mini-card">
-          <p>Feel free to reach out if you’d like to discuss opportunities or my work.</p>
+          <h2>Reach me directly</h2>
           <p><strong>Email:</strong> <a href="mailto:harini.avs1@gmail.com">harini.avs1@gmail.com</a></p>
           <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/harini-avs103/" target="_blank" rel="noreferrer noopener">harini-amperayani</a></p>
+          <p><strong>Currently in:</strong> United Kingdom, open to remote opportunities.</p>
         </article>
         <article class="mini-card">
+          <h2>Send a message</h2>
           <form data-mail-form>
             <label for="name">Name</label>
-            <input id="name" name="name" type="text" />
+            <input id="name" name="name" type="text" placeholder="Your name" />
             <label for="email">Email*</label>
-            <input id="email" name="email" type="email" required />
+            <input id="email" name="email" type="email" placeholder="you@email.com" required />
             <label for="message">Message*</label>
-            <textarea id="message" name="message" required></textarea>
+            <textarea id="message" name="message" placeholder="Share a bit about the opportunity, project, or idea." required></textarea>
             <button class="btn" type="submit">Send</button>
           </form>
         </article>
       </section>
+
       <div class="footer-line"></div>
     </main>
 
@@ -51,9 +62,9 @@
           <span class="dot">•</span><a href="mailto:harini.avs1@gmail.com">Email</a>
           <span class="dot">•</span><a href="https://www.linkedin.com/in/harini-avs103/" target="_blank" rel="noreferrer noopener">LinkedIn</a>
         </div>
+        <p>© 2026 Harini Amperayani</p>
       </div>
     </footer>
   </div>
 </body>
 </html>
-
