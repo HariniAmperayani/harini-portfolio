@@ -358,6 +358,43 @@ p {
   font-size: 13px;
 }
 
+.resume-layout .container {
+  width: min(760px, calc(100% - 48px));
+}
+
+.resume-page {
+  padding-bottom: 0;
+}
+
+.resume-title {
+  margin: 38px 0 28px;
+  font-size: 25px;
+  line-height: 1.2;
+  font-weight: 700;
+}
+
+.resume-copy {
+  min-height: 244px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding-top: 4px;
+}
+
+.resume-copy p {
+  margin: 0 0 28px;
+  font-size: 13px;
+}
+
+.resume-copy .btn {
+  min-width: 127px;
+}
+
+.resume-page .footer-line {
+  margin-top: 0;
+}
+
 .case-hero {
   display: grid;
   grid-template-columns: minmax(0, 1fr) 300px;
@@ -539,6 +576,10 @@ textarea:focus {
     text-align: right;
     margin-bottom: 6px;
   }
+
+  .resume-copy {
+    min-height: 230px;
+  }
 }
 
 @media (max-width: 620px) {
@@ -627,5 +668,16 @@ textarea:focus {
   .work-copy p:first-child {
     font-size: 17px;
     line-height: 1.5;
+  }
+
+  .resume-layout .container {
+    width: min(100% - 28px, 360px);
+    margin-left: 14px;
+    margin-right: auto;
+  }
+
+  .resume-copy {
+    align-items: stretch;
+    min-height: 240px;
   }
 }
