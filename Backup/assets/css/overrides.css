@@ -1,0 +1,312 @@
+/* Keep SingleFile rendering, only adjust/clean behavior for static replica */
+#WIX_ADS {
+  display: none !important;
+}
+
+#site-root {
+  top: 0 !important;
+}
+
+/* keep form usable without Wix backend */
+input,
+textarea,
+button {
+  pointer-events: auto !important;
+}
+
+/* minor layout safety for local static rendering */
+html,
+body {
+  min-height: 100%;
+}
+
+html,
+body {
+  background: #eef3ff !important;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  overflow-x: hidden !important;
+}
+
+body.responsive #site-root,
+#site-root,
+#SITE_PAGES,
+#PAGES_CONTAINER,
+[id^="Container"],
+section[class*="wixui-section"] {
+  min-width: 0 !important;
+  width: 100% !important;
+  max-width: 100% !important;
+}
+
+[data-mesh-id$="inlineContent"],
+[data-mesh-id$="inlineContent-gridContainer"] {
+  width: 100% !important;
+  max-width: 100% !important;
+}
+
+img,
+svg,
+video,
+iframe {
+  max-width: 100%;
+}
+
+.ku3DBC,
+.ku3DBC * {
+  overflow-wrap: anywhere;
+}
+
+/* The exported Wix pages use a fixed 980px canvas. Keep that desktop canvas
+   centered, then progressively relax the fixed coordinates below tablet size. */
+@media (min-width: 981px) {
+  #masterPage,
+  #PAGES_CONTAINER,
+  #SITE_PAGES,
+  #SITE_PAGES_TRANSITION_GROUP,
+  [id^="Container"],
+  section[class*="wixui-section"] {
+    min-height: 100vh !important;
+  }
+
+  [data-mesh-id$="inlineContent-gridContainer"] > [id] {
+    max-width: min(100%, 980px);
+  }
+
+  #comp-mlkul5v4,
+  #comp-kjczrk5e3,
+  #comp-kjczrk5i,
+  #comp-mlhxxcrf,
+  #comp-mlgwuqxe {
+    transform: translateX(calc((100vw - 980px) / 2)) !important;
+  }
+}
+
+@media (max-width: 980px) {
+  :root {
+    --site-width: 100vw !important;
+  }
+
+  body,
+  body:not(.responsive) {
+    overflow-x: hidden !important;
+  }
+
+  [data-mesh-id$="inlineContent-gridContainer"] {
+    width: 100% !important;
+    max-width: 100% !important;
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+  }
+
+  [data-mesh-id$="inlineContent-gridContainer"] > [id] {
+    max-width: calc(100vw - 40px) !important;
+  }
+
+  wix-dropdown-menu,
+  [id*="tkm"],
+  [id*="sx3ul"] {
+    max-width: calc(100vw - 120px) !important;
+  }
+
+  nav ul,
+  [id$="itemsContainer"] {
+    display: flex !important;
+    flex-wrap: wrap !important;
+    justify-content: flex-end !important;
+    gap: 8px 12px !important;
+    width: 100% !important;
+  }
+
+  nav li,
+  [id$="itemsContainer"] > li {
+    width: auto !important;
+    min-width: auto !important;
+  }
+
+  nav a,
+  nav p {
+    white-space: nowrap;
+  }
+
+  .StylableButton2545352419__root {
+    min-height: 44px !important;
+    max-width: 100% !important;
+  }
+}
+
+@media (max-width: 700px) {
+  #site-root {
+    zoom: 0.86;
+    width: 116.3% !important;
+    max-width: 116.3% !important;
+  }
+
+  [data-mesh-id$="inlineContent-gridContainer"] {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: stretch !important;
+    gap: 24px !important;
+    min-height: 0 !important;
+    padding-left: 18px !important;
+    padding-right: 18px !important;
+  }
+
+  [id^="comp-"] {
+    max-width: 100% !important;
+  }
+
+  [data-mesh-id$="inlineContent-gridContainer"] > [id] {
+    position: relative !important;
+    left: auto !important;
+    right: auto !important;
+    top: auto !important;
+    margin: 0 !important;
+    width: 100% !important;
+    max-width: calc(100vw - 36px) !important;
+    justify-self: auto !important;
+    align-self: auto !important;
+  }
+
+  [data-mesh-id$="inlineContent-gridContainer"] > [data-mesh-id*="wedge"] {
+    display: none !important;
+  }
+
+  [id^="comp-"][class*="wixui-image"],
+  [id^="comp-"][class*="wixui-vector-image"] {
+    width: min(100%, var(--width, 320px)) !important;
+    height: auto !important;
+    align-self: center !important;
+  }
+
+  [id^="comp-"][class*="wixui-image"] img {
+    width: 100% !important;
+    height: auto !important;
+    object-fit: contain !important;
+  }
+
+  [id^="comp-"][class*="wixui-vector-image"] {
+    display: none !important;
+  }
+
+  [id^="comp-"][class*="wixui-horizontal-line"] {
+    width: 100% !important;
+  }
+
+  .ku3DBC,
+  .ku3DBC h1,
+  .ku3DBC h2,
+  .ku3DBC p {
+    width: min(100%, calc(100vw - 110px)) !important;
+    max-width: calc(100vw - 110px) !important;
+    height: auto !important;
+    min-height: 0 !important;
+    text-align: left !important;
+    white-space: normal !important;
+    overflow: visible !important;
+  }
+
+  .ku3DBC span,
+  .ku3DBC a {
+    max-width: 100% !important;
+    white-space: normal !important;
+  }
+
+  h1,
+  h1 span {
+    font-size: clamp(36px, 13vw, 72px) !important;
+    line-height: 1.05 !important;
+  }
+
+  h2,
+  h2 span {
+    font-size: clamp(22px, 7vw, 34px) !important;
+    line-height: 1.2 !important;
+  }
+
+  p,
+  p span,
+  li,
+  a {
+    font-size: clamp(14px, 3.7vw, 16px) !important;
+    line-height: 1.55 !important;
+  }
+
+  wix-dropdown-menu,
+  [id*="tkm"],
+  [id*="sx3ul"] {
+    width: 100% !important;
+    max-width: 100% !important;
+    height: auto !important;
+  }
+
+  nav ul,
+  [id$="itemsContainer"] {
+    justify-content: flex-start !important;
+  }
+
+  [id$="itemsContainer"] > li,
+  [id$="itemsContainer"] a,
+  [id$="itemsContainer"] p {
+    height: auto !important;
+    line-height: 1.3 !important;
+  }
+
+  .StylableButton2545352419__root,
+  .StylableButton2545352419__container {
+    width: min(100%, calc(100vw - 110px)) !important;
+    max-width: calc(100vw - 110px) !important;
+  }
+
+  form,
+  input,
+  textarea,
+  button {
+    width: min(100%, calc(100vw - 110px)) !important;
+    max-width: calc(100vw - 110px) !important;
+  }
+
+  [id*="mlp3"] {
+    align-self: stretch !important;
+  }
+
+  [id*="mlp3"] [data-mesh-id$="inlineContent-gridContainer"] {
+    align-items: center !important;
+    gap: 8px 12px !important;
+  }
+
+  #comp-mlksjgy1,
+  #comp-mlksdkrh,
+  #comp-mljc5uui,
+  #comp-mlgtc265,
+  [data-testid^="wixui_ShareButtons"] {
+    display: none !important;
+  }
+}
+
+@media (max-width: 420px) {
+  [data-mesh-id$="inlineContent-gridContainer"] {
+    padding-left: 14px !important;
+    padding-right: 14px !important;
+  }
+
+  [data-mesh-id$="inlineContent-gridContainer"] > [id] {
+    max-width: calc(100vw - 28px) !important;
+  }
+
+  h1,
+  h1 span {
+    font-size: clamp(34px, 15vw, 58px) !important;
+  }
+}
