@@ -241,6 +241,26 @@ p {
   margin-bottom: 26px;
 }
 
+.credential {
+  display: inline-flex;
+  align-items: center;
+  margin-top: 4px;
+  margin-bottom: 0;
+  padding: 6px 10px;
+  border: 1px solid rgba(135, 150, 109, 0.24);
+  border-radius: 999px;
+  color: var(--muted);
+  font-size: 13px;
+  font-weight: 600;
+  transition: border-color 160ms ease, color 160ms ease, background-color 160ms ease;
+}
+
+.credential:hover {
+  background: rgba(255, 255, 255, 0.055);
+  border-color: rgba(135, 150, 109, 0.42);
+  color: var(--text);
+}
+
 .section-copy h2,
 .project-feature h2,
 .case-content h2,
