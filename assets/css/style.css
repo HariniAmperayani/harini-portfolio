@@ -190,6 +190,16 @@ p {
   transform: translateY(-1px);
 }
 
+.btn-secondary {
+  border: 1px solid rgba(175, 167, 141, 0.42);
+  background: rgba(255, 255, 255, 0.035);
+  color: var(--text);
+}
+
+.btn-secondary:hover {
+  background: rgba(255, 255, 255, 0.07);
+}
+
 .text-link {
   display: inline-flex;
   align-items: center;
@@ -221,6 +231,10 @@ p {
 .page-heading.centered {
   margin: 0 auto;
   text-align: center;
+}
+
+.contact-heading .section-title {
+  font-size: clamp(46px, 5.8vw, 56px);
 }
 
 .section-title {
@@ -376,88 +390,71 @@ p {
   padding-bottom: 0;
 }
 
-.work-layout .container {
-  width: min(830px, calc(100% - 48px));
-}
-
-.work-title {
-  margin: 40px 0 48px;
-  font-size: 25px;
-  line-height: 1.2;
-  font-weight: 700;
+.work-layout .work-page {
+  width: min(980px, calc(100% - 48px));
 }
 
 .work-card {
-  width: min(720px, 100%);
-  margin: 0 auto;
-  padding: 14px 24px 15px 48px;
+  width: min(780px, 100%);
+  margin: 0;
+  padding: 28px 32px;
   display: grid;
-  grid-template-columns: 230px 1fr;
+  grid-template-columns: 188px minmax(0, 1fr);
   align-items: center;
-  gap: 48px;
-  background: rgba(255, 255, 255, 0.72);
+  gap: 44px;
+  border: 1px solid rgba(3, 5, 3, 0.86);
+  border-radius: 14px;
+  background: rgba(255, 255, 255, 0.04);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.055), 0 24px 64px rgba(0, 0, 0, 0.2);
 }
 
 .work-page .footer-line {
-  margin-top: 160px;
+  margin-top: 56px;
+}
+
+.work-copy {
+  display: block;
 }
 
 .frugal-logo {
-  width: 216px;
+  width: 188px;
   aspect-ratio: 1;
   display: grid;
   place-items: center;
-  border-radius: 44px;
-  background: #646a70;
+  border-radius: 38px;
+  background: #202124;
+  color: #fff;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.08), 0 18px 42px rgba(0, 0, 0, 0.24);
 }
 
-.frugal-logo h2 {
-  margin: 0;
-  color: #fff;
-  font-family: Montserrat, "Avenir Next", Avenir, "Segoe UI", system-ui, sans-serif;
-  font-size: 56px;
+.frugal-logo span {
+  font-size: 48px;
   line-height: 1;
   font-weight: 700;
   letter-spacing: 0;
 }
 
-.frugal-logo span {
+.frugal-logo .frugal-accent {
   color: #4caf50;
 }
 
-.work-copy {
-  display: grid;
-  grid-template-columns: 1fr auto;
-  column-gap: 18px;
-  align-items: end;
+.work-copy h2 {
+  margin: 0 0 14px;
+  font-size: clamp(38px, 5vw, 58px);
+  line-height: 1;
+  font-weight: 700;
+  letter-spacing: 0;
 }
 
-.work-copy p:first-child {
-  grid-column: 1 / -1;
-  max-width: 360px;
-  margin: 0 0 8px;
-  font-size: 19px;
-  line-height: 1.45;
-  letter-spacing: 0.04em;
+.work-copy p:not(.eyebrow) {
+  max-width: 440px;
+  margin-bottom: 24px;
+  font-size: 16px;
+  line-height: 1.72;
 }
 
-.work-note {
-  justify-self: end;
-  margin: 0;
-  font-size: 13px;
-  font-style: italic;
-}
-
-.read-more {
-  grid-column: 1;
-  grid-row: 2;
-  align-self: end;
-  color: #8b0000;
-  font-size: 13px;
-}
-
-.resume-layout .container {
-  width: min(760px, calc(100% - 48px));
+.resume-layout .resume-page {
+  width: min(880px, calc(100% - 48px));
 }
 
 .resume-page {
@@ -465,28 +462,23 @@ p {
 }
 
 .resume-title {
-  margin: 38px 0 28px;
-  font-size: 25px;
-  line-height: 1.2;
+  margin: 0 0 16px;
+  font-size: clamp(54px, 8vw, 88px);
+  line-height: 0.95;
   font-weight: 700;
+  letter-spacing: 0;
 }
 
-.resume-copy {
-  min-height: 244px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  padding-top: 4px;
+.resume-hero {
+  max-width: 720px;
+  padding: clamp(82px, 12vw, 138px) 0 clamp(82px, 12vw, 132px);
 }
 
-.resume-copy p {
-  margin: 0 0 28px;
-  font-size: 13px;
-}
-
-.resume-copy .btn {
-  min-width: 127px;
+.resume-hero p:not(.eyebrow) {
+  max-width: 660px;
+  margin-bottom: 26px;
+  font-size: 16px;
+  line-height: 1.72;
 }
 
 .resume-page .footer-line {
@@ -506,13 +498,6 @@ p {
   gap: 12px;
 }
 
-.case-meta article {
-  background: var(--surface);
-  border: 1px solid rgba(255, 255, 255, 0.78);
-  border-radius: 8px;
-  padding: 16px;
-}
-
 .case-meta h3 {
   margin: 0 0 4px;
   font-size: 14px;
@@ -529,6 +514,33 @@ p {
   padding: 28px 0;
 }
 
+.case-overview {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 14px;
+  margin-bottom: 42px;
+}
+
+.case-overview article,
+.case-meta article {
+  background: var(--surface);
+  border: 1px solid rgba(255, 255, 255, 0.78);
+  border-radius: 8px;
+  padding: 16px;
+}
+
+.case-overview h3 {
+  margin: 0 0 8px;
+  font-size: 15px;
+}
+
+.case-overview p {
+  margin: 0;
+  color: var(--muted);
+  font-size: 13px;
+  line-height: 1.6;
+}
+
 .case-content h2 {
   margin-top: 36px;
 }
@@ -543,6 +555,22 @@ p {
   margin: 18px 0 34px;
 }
 
+.gallery-intro {
+  max-width: 720px;
+  padding-top: 18px;
+}
+
+.gallery-intro h2 {
+  margin: 0 0 8px;
+  font-size: clamp(24px, 3vw, 34px);
+  line-height: 1.2;
+}
+
+.gallery-intro p {
+  margin-bottom: 0;
+  color: var(--muted);
+}
+
 .case-gallery.wireframes {
   grid-template-columns: repeat(5, minmax(0, 1fr));
 }
@@ -554,10 +582,30 @@ p {
 }
 
 .contact-wrap {
-  display: grid;
-  grid-template-columns: 0.9fr 1.1fr;
-  gap: 20px;
+  max-width: 760px;
   padding: 22px 0 44px;
+}
+
+.contact-panel {
+  padding: 30px;
+  border: 1px solid rgba(3, 5, 3, 0.86);
+  border-radius: 14px;
+  background: rgba(255, 255, 255, 0.04);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.055), 0 24px 64px rgba(0, 0, 0, 0.2);
+}
+
+.contact-panel h2 {
+  max-width: 620px;
+  margin: 0 0 26px;
+  font-size: clamp(20px, 2.4vw, 26px);
+  line-height: 1.35;
+}
+
+.contact-actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 18px;
 }
 
 form {
@@ -653,7 +701,8 @@ textarea:focus {
   }
 
   .card-grid,
-  .card-grid.two-col {
+  .card-grid.two-col,
+  .case-overview {
     grid-template-columns: 1fr;
   }
 
@@ -667,28 +716,23 @@ textarea:focus {
 
   .work-card {
     grid-template-columns: 1fr;
-    justify-items: center;
-    gap: 26px;
-    padding: 28px;
+    align-items: start;
+    gap: 22px;
+    padding: 20px;
+  }
+
+  .frugal-logo {
+    width: 156px;
+    border-radius: 32px;
   }
 
   .work-copy {
-    display: block;
     width: 100%;
     text-align: left;
   }
 
-  .work-copy p:first-child {
-    max-width: none;
-  }
-
-  .work-note {
-    text-align: right;
-    margin-bottom: 6px;
-  }
-
-  .resume-copy {
-    min-height: 230px;
+  .resume-hero {
+    padding-top: 48px;
   }
 }
 
@@ -772,33 +816,23 @@ textarea:focus {
     width: 100%;
   }
 
-  .work-title {
-    margin-top: 34px;
-    margin-bottom: 30px;
-  }
-
-  .frugal-logo {
-    width: min(216px, 100%);
-    border-radius: 36px;
-  }
-
-  .frugal-logo h2 {
-    font-size: clamp(44px, 15vw, 56px);
-  }
-
-  .work-copy p:first-child {
-    font-size: 17px;
-    line-height: 1.5;
-  }
-
-  .resume-layout .container {
+  .work-layout .work-page {
     width: min(100% - 28px, 360px);
     margin-left: 14px;
     margin-right: auto;
   }
 
-  .resume-copy {
-    align-items: stretch;
-    min-height: 240px;
+  .work-copy h2 {
+    font-size: clamp(36px, 13vw, 48px);
+  }
+
+  .resume-layout .resume-page {
+    width: min(100% - 28px, 360px);
+    margin-left: 14px;
+    margin-right: auto;
+  }
+
+  .resume-hero {
+    padding-top: 44px;
   }
 }
