@@ -103,13 +103,13 @@ p {
 }
 
 .identity-brand .brand-text {
-  display: flex;
-  flex-direction: column;
+  display: block;
   gap: 3px;
 }
 
 .identity-brand .brand-name {
-  color: var(--text);
+  display: block;
+  color: #f1ede2;
   font-size: 15px;
   font-weight: 700;
   line-height: 1.15;
@@ -117,6 +117,8 @@ p {
 }
 
 .identity-brand .brand-title {
+  display: block;
+  margin-top: 3px;
   font-size: 11px;
   line-height: 1.15;
   letter-spacing: 0.13em;
