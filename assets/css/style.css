@@ -98,6 +98,30 @@ p {
   text-transform: uppercase;
 }
 
+.identity-brand {
+  gap: 13px;
+}
+
+.identity-brand .brand-text {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.identity-brand .brand-name {
+  color: var(--text);
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 1.15;
+  letter-spacing: 0;
+}
+
+.identity-brand .brand-title {
+  font-size: 11px;
+  line-height: 1.15;
+  letter-spacing: 0.13em;
+}
+
 .menu {
   display: flex;
   align-items: center;
