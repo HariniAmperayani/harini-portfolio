@@ -1388,10 +1388,15 @@ body.contact-page {
   }
 
   .btn {
-    min-height: 58px;
-    padding: 0 36px;
-    font-size: 12.5px;
+    min-height: 46px;
+    padding: 0 26px;
+    background: rgba(215, 167, 142, 0.1);
+    font-size: 11px;
     line-height: 1;
+  }
+
+  .btn-secondary {
+    background: rgba(245, 242, 239, 0.045);
   }
 
   .work-layout .work-page {
@@ -1523,8 +1528,8 @@ body.contact-page {
     position: relative;
     z-index: 2;
     display: block;
-    width: min(100% - 28px, 360px);
-    margin: clamp(110px, 20svh, 160px) 14px 0;
+    width: min(100% - 40px, 360px);
+    margin: clamp(110px, 20svh, 160px) 20px 0;
     text-align: left;
   }
 
@@ -1536,10 +1541,11 @@ body.contact-page {
 
   .home-work-button {
     display: inline-flex;
-    min-height: 58px;
+    min-height: 46px;
     margin-top: clamp(36px, 6svh, 54px);
-    padding: 0 36px;
-    font-size: 12.5px;
+    padding: 0 26px;
+    background: rgba(215, 167, 142, 0.1);
+    font-size: 11px;
     line-height: 1;
   }
 
