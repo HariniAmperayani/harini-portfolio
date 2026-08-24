@@ -100,7 +100,7 @@ p {
   padding: 0 30px;
   border: 1px solid #d7a78e;
   border-radius: 0;
-  background: transparent;
+  background: rgba(215, 167, 142, 0.1);
   color: #f6d8c9;
   font-family: inherit;
   font-size: 13px;
@@ -120,6 +120,7 @@ p {
 
 .btn-secondary {
   border-color: rgba(245, 242, 239, 0.42);
+  background: rgba(245, 242, 239, 0.045);
   color: rgba(245, 242, 239, 0.86);
 }
 
@@ -922,7 +923,7 @@ body.contact-page {
   padding: 0 30px;
   border: 1px solid #d7a78e;
   border-radius: 0;
-  background: transparent;
+  background: rgba(215, 167, 142, 0.1);
   color: #f6d8c9;
   font-family: inherit;
   font-size: 13px;
@@ -1613,6 +1614,10 @@ body.contact-page {
 
   .home-contact-section {
     padding-bottom: 48px;
+  }
+
+  .home-contact-card .btn {
+    font-size: 12px;
   }
 
   .home-footer .container {
