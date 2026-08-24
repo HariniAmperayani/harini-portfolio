@@ -1344,7 +1344,8 @@ body.contact-page {
   .home-page .page {
     min-height: 100vh;
     min-height: 100svh;
-    overflow: visible;
+    overflow-x: clip;
+    overflow-y: visible;
   }
 
   .container {
@@ -1522,6 +1523,7 @@ body.contact-page {
     height: calc(100svh - 124px);
     min-height: 0;
     padding: 0 0 34px;
+    overflow-x: clip;
   }
 
   .home-hero-copy {
@@ -1576,7 +1578,7 @@ body.contact-page {
   .home-section {
     width: min(100% - 28px, 360px);
     min-height: auto;
-    margin-left: 14px;
+    margin-left: auto;
     margin-right: auto;
     padding: 54px 0;
     display: grid;
@@ -1615,7 +1617,7 @@ body.contact-page {
 
   .home-footer .container {
     width: min(100% - 28px, 360px);
-    margin-left: 14px;
+    margin-left: auto;
     margin-right: auto;
   }
 
