@@ -14,7 +14,7 @@
   <link rel="stylesheet" href="assets/css/style.css?v=20260824-header" />
   <script defer src="assets/js/clean-urls.js"></script>
 </head>
-<body class="home-page">
+<body class="home-page" id="top">
   <div class="page">
     <header class="home-header">
       <div class="home-shell top-nav">
@@ -27,10 +27,10 @@
           </span>
         </a>
         <nav class="home-menu" aria-label="Main">
-          <a href="index.html" aria-current="page">Home</a>
-          <a href="projects/index.html">My work</a>
-          <a href="resume/index.html">About me</a>
-          <a href="contact/index.html">Contact</a>
+          <a href="#home" aria-current="page">Home</a>
+          <a href="#work">My work</a>
+          <a href="#about">About me</a>
+          <a href="#contact">Contact</a>
         </nav>
         <details class="mobile-menu">
           <summary aria-label="Open navigation">
@@ -39,24 +39,25 @@
             <span></span>
           </summary>
           <nav aria-label="Mobile main">
-            <a href="index.html" aria-current="page">Home</a>
-            <a href="projects/index.html">My work</a>
-            <a href="resume/index.html">About me</a>
-            <a href="contact/index.html">Contact</a>
+            <a href="#home" aria-current="page">Home</a>
+            <a href="#work">My work</a>
+            <a href="#about">About me</a>
+            <a href="#contact">Contact</a>
           </nav>
         </details>
       </div>
     </header>
 
     <main class="home-main">
-      <section class="home-hero" aria-label="Harini portfolio preview">
+      <section class="home-hero" id="home" aria-label="Harini portfolio preview">
         <div class="home-hero-copy">
           <h1>
             <span>Think.</span>
             <span>Design.</span>
             <span>Improve.</span>
           </h1>
-          <a class="home-work-button" href="projects/index.html">View my work</a>
+          <a class="home-work-button home-work-button-desktop" href="#work">View my work</a>
+          <a class="home-work-button home-work-button-mobile" href="#work">View my work</a>
         </div>
         <div class="home-hero-image">
           <img src="assets/img/laptop-hero.png" alt="Laptop and phone displaying Harini's portfolio" />
@@ -64,7 +65,75 @@
         <img class="mobile-leaf-art" src="assets/img/leaf-mobile.png" alt="" aria-hidden="true" />
       </section>
 
+      <section class="home-section home-work-preview" id="work" aria-labelledby="home-work-title">
+        <div class="home-section-card home-work-card">
+          <div class="home-section-copy">
+            <h2 id="home-work-title">My work</h2>
+          </div>
+          <article class="home-project-card" aria-labelledby="home-frugal-title">
+            <div class="home-project-copy">
+              <h3 id="home-frugal-title">Frugal</h3>
+              <p>A guided budgeting experience designed to help users build confidence around spending, saving, and everyday money habits.</p>
+              <a class="btn" href="case-study-frugal/index.html">View case study</a>
+            </div>
+            <div class="home-project-aside">
+              <div class="frugal-logo" aria-hidden="true">
+                <span>Fr<span class="frugal-accent">u</span>gal</span>
+              </div>
+              <div class="work-tags" aria-label="Project skills">
+                <span>UX Research</span>
+                <span>Wireframes</span>
+                <span>Prototype</span>
+                <span>Usability Testing</span>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="home-section" id="about" aria-labelledby="home-about-title">
+        <div class="home-section-card home-about-card">
+          <div class="home-section-copy">
+            <h2 id="home-about-title">About me</h2>
+          </div>
+          <div class="home-about-copy">
+            <p>I'm Harini, a UI/UX designer with a background in digital advertising and some hands-on experience with front-end development.</p>
+            <p>My interest in UX grew naturally from the work I was already doing. Over the years, I worked closely with websites, campaigns and performance data, and I became increasingly curious about how people interact with digital products — what catches their attention, where they struggle, and what makes an experience easier to use.</p>
+            <p>That curiosity eventually led me to UI/UX design. Today, I enjoy understanding a problem, exploring different possibilities and turning them into designs that are simple, clear and useful.</p>
+            <p>Having worked with both data and front-end development also influences the way I design. I think about not only how something looks, but how it works for the user and how it can work in the real world.</p>
+            <div class="action-row">
+              <a class="btn" href="assets/docs/Harini-Amperayani-Resume.pdf" target="_blank" rel="noreferrer noopener">View Resume</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="home-section home-contact-section" id="contact" aria-labelledby="home-contact-title">
+        <div class="home-section-card home-contact-card">
+          <div class="home-section-copy">
+            <h2 id="home-contact-title">Let’s connect.</h2>
+            <p>I’d love to hear from you.</p>
+          </div>
+          <div class="contact-actions">
+            <a class="btn" href="mailto:harini.avs1@gmail.com?subject=UX%20Portfolio%20Contact">Email me</a>
+            <a class="btn btn-secondary preserve-case" href="https://www.linkedin.com/in/harini-avs103/" target="_blank" rel="noreferrer noopener">LinkedIn</a>
+          </div>
+        </div>
+      </section>
     </main>
+
+    <footer class="site-footer home-footer">
+      <div class="container">
+        <div class="footer-line"></div>
+        <nav class="home-footer-nav" aria-label="Homepage sections">
+          <a href="#home">Home</a>
+          <a href="#work">My work</a>
+          <a href="#about">About me</a>
+        </nav>
+        <a class="home-footer-top" href="#top" aria-label="Back to top">↑</a>
+        <p>© 2026 Harini Amperayani · UI/UX Designer</p>
+      </div>
+    </footer>
   </div>
 </body>
 </html>
