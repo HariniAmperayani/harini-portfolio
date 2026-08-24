@@ -4,44 +4,66 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>My work | Harini</title>
-  <link rel="stylesheet" href="../assets/css/style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../assets/css/style.css?v=20260824-header" />
 </head>
 <body class="work-layout">
   <div class="page">
-    <header>
-      <div class="container top-nav">
-        <a class="brand identity-brand" href="/" aria-label="Harini home">
-          <img class="brand-logo" src="../assets/img/2.png" alt="" />
-          <span class="brand-text">
-            <span class="brand-name">Harini Amperayani</span>
-            <span class="brand-title">UI/UX Designer</span>
+    <header class="home-header">
+      <div class="home-shell top-nav">
+        <a class="home-brand" href="../index.html" aria-label="Harini Amperayani home">
+          <span class="home-brand-name" aria-hidden="true">
+            <span>H</span><span>A</span><span>R</span><span>I</span><span>N</span><span>I</span>
+          </span>
+          <span class="home-brand-surname" aria-hidden="true">
+            <span>A</span><span>M</span><span>P</span><span>E</span><span>R</span><span>A</span><span>Y</span><span>A</span><span>N</span><span>I</span>
           </span>
         </a>
-        <nav class="menu" aria-label="Main">
-          <a href="/">Home</a>
-          <a href="/resume/">Resume</a>
-          <a href="/projects/" aria-current="page">My work</a>
-          <a href="/contact/">Contact</a>
+        <nav class="home-menu" aria-label="Main">
+          <a href="../index.html">Home</a>
+          <a href="index.html" aria-current="page">My work</a>
+          <a href="../resume/index.html">About me</a>
+          <a href="../contact/index.html">Contact</a>
         </nav>
+        <details class="mobile-menu">
+          <summary aria-label="Open navigation">
+            <span></span>
+            <span></span>
+            <span></span>
+          </summary>
+          <nav aria-label="Mobile main">
+            <a href="../index.html">Home</a>
+            <a href="index.html" aria-current="page">My work</a>
+            <a href="../resume/index.html">About me</a>
+            <a href="../contact/index.html">Contact</a>
+          </nav>
+        </details>
       </div>
     </header>
 
     <main class="container work-page">
       <section class="page-heading">
-        <h1 class="section-title">Case studies and design work.</h1>
+        <h1 class="section-title">My work</h1>
         <p>Projects focused on research, responsive design, and practical digital problem solving.</p>
       </section>
 
-      <section class="work-card" aria-labelledby="frugal-title">
-        <div class="frugal-logo" aria-labelledby="frugal-title">
-          <span>Fr<span class="frugal-accent">u</span>gal</span>
-        </div>
-
+      <section class="work-card work-card-featured" aria-labelledby="frugal-title">
         <div class="work-copy">
-          <p class="eyebrow">UX case study · Mobile and desktop</p>
+          <p class="eyebrow">UX case study · Mobile app · Figma</p>
           <h2 id="frugal-title">Frugal</h2>
-          <p>A finance and budgeting experience designed to help users feel more confident about spending, savings goals, and everyday money habits.</p>
-          <a class="btn" href="/case-study-frugal/">View case study</a>
+          <p>A guided budgeting experience designed to help users build confidence around spending, saving, and everyday money habits.</p>
+          <div class="work-tags" aria-label="Project skills">
+            <span>UX Research</span>
+            <span>Wireframes</span>
+            <span>Prototype</span>
+            <span>Usability Testing</span>
+          </div>
+          <a class="btn" href="../case-study-frugal/index.html">View case study</a>
+        </div>
+        <div class="frugal-logo" aria-hidden="true">
+          <span>Fr<span class="frugal-accent">u</span>gal</span>
         </div>
       </section>
 

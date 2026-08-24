@@ -8,92 +8,63 @@
     name="description"
     content="Portfolio for Harini Amperayani, a UI/UX designer with a background in digital advertising and front-end practice."
   />
-  <link rel="stylesheet" href="assets/css/style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/style.css?v=20260824-header" />
   <script defer src="assets/js/clean-urls.js"></script>
 </head>
-<body>
+<body class="home-page">
   <div class="page">
-    <header>
-      <div class="container top-nav">
-        <a class="brand identity-brand" href="/" aria-label="Harini home">
-          <img class="brand-logo" src="assets/img/2.png" alt="" />
-          <span class="brand-text">
-            <span class="brand-name">Harini Amperayani</span>
-            <span class="brand-title">UI/UX Designer</span>
+    <header class="home-header">
+      <div class="home-shell top-nav">
+        <a class="home-brand" href="index.html" aria-label="Harini Amperayani home">
+          <span class="home-brand-name" aria-hidden="true">
+            <span>H</span><span>A</span><span>R</span><span>I</span><span>N</span><span>I</span>
+          </span>
+          <span class="home-brand-surname" aria-hidden="true">
+            <span>A</span><span>M</span><span>P</span><span>E</span><span>R</span><span>A</span><span>Y</span><span>A</span><span>N</span><span>I</span>
           </span>
         </a>
-        <nav class="menu" aria-label="Main">
-          <a href="/" aria-current="page">Home</a>
-          <a href="/resume/">Resume</a>
-          <a href="/projects/">My work</a>
-          <a href="/contact/">Contact</a>
+        <nav class="home-menu" aria-label="Main">
+          <a href="index.html" aria-current="page">Home</a>
+          <a href="projects/index.html">My work</a>
+          <a href="resume/index.html">About me</a>
+          <a href="contact/index.html">Contact</a>
         </nav>
+        <details class="mobile-menu">
+          <summary aria-label="Open navigation">
+            <span></span>
+            <span></span>
+            <span></span>
+          </summary>
+          <nav aria-label="Mobile main">
+            <a href="index.html" aria-current="page">Home</a>
+            <a href="projects/index.html">My work</a>
+            <a href="resume/index.html">About me</a>
+            <a href="contact/index.html">Contact</a>
+          </nav>
+        </details>
       </div>
     </header>
 
-    <main class="container">
-      <section class="hero">
-        <div>
-          <h1 class="hello">Hello</h1>
+    <main class="home-main">
+      <section class="home-hero" aria-label="Harini portfolio preview">
+        <div class="home-hero-copy">
+          <h1>
+            <span>Think.</span>
+            <span>Design.</span>
+            <span>Improve.</span>
+          </h1>
+          <a class="home-work-button" href="projects/index.html">View my work</a>
         </div>
-        <div class="lead">
-          <p><strong>I’m Harini Amperayani, a UI/UX Designer</strong> with a design approach rooted in clarity and empathy.</p>
-          <p><strong>I bring 7+ years of professional experience</strong>, with a background in digital advertising. Working closely with hundreds of websites sparked my interest in user experience and led me to transition into UI/UX design and front-end development. I’ve worked hands-on across UX and front-end projects, contributing to UI improvements and UX discussions focused on usability, structure, and clarity.</p>
-          <div class="action-row">
-            <a class="btn" href="/projects/">See my work</a>
-          </div>
+        <div class="home-hero-image">
+          <img src="assets/img/laptop-hero.png" alt="Laptop and phone displaying Harini's portfolio" />
         </div>
+        <img class="mobile-leaf-art" src="assets/img/leaf-mobile.png" alt="" aria-hidden="true" />
       </section>
 
-      <section class="content-section">
-        <div class="section-copy">
-          <p class="eyebrow">Experience snapshot</p>
-          <h2>From campaign strategy to product experience.</h2>
-          <p>Programmatic advertising taught me how to evaluate digital experiences quickly. UX training sharpened how I rebuild them with intention, structure, and user clarity.</p>
-          <a class="credential" href="https://www.credly.com/badges/f89e2458-52d2-461b-a068-186207738a0e" target="_blank" rel="noreferrer noopener">Google UX Design Professional Certificate</a>
-        </div>
-        <div class="card-grid">
-          <article class="mini-card">
-            <h3>Programmatic Lead → UX Designer</h3>
-            <p>Led campaigns for global brands, partnered with product, data, and creative teams, and learned what keeps users from converting.</p>
-          </article>
-          <article class="mini-card">
-            <h3>UI/UX design practice</h3>
-            <p>Designed responsive mobile and desktop experiences, translating user research, personas, and user flows into wireframes and high-fidelity prototypes.</p>
-          </article>
-          <article class="mini-card">
-            <h3>UX research mindset</h3>
-            <p>Google UX certificate graduate with a focus on qualitative research, structured insights, and iterative prototyping.</p>
-          </article>
-        </div>
-      </section>
-
-      <section class="content-section">
-        <div class="project-feature">
-          <div>
-            <p class="eyebrow">Recent focus</p>
-            <h2>Frugal — everyday finance made simple.</h2>
-            <p>A UX case study exploring how guided design can help households feel confident about budgeting, saving goals, and financial habits.</p>
-            <a class="btn" href="/case-study-frugal/">Read the case study</a>
-          </div>
-          <div class="desktop-preview" aria-label="Frugal desktop dashboard preview">
-            <img src="assets/img/frugal-desktop-mockup.png" alt="Frugal desktop dashboard screenshot" />
-          </div>
-        </div>
-      </section>
-
-      <div class="footer-line"></div>
     </main>
-
-    <footer class="site-footer">
-      <div class="container">
-        <div class="links">
-          <span class="dot">•</span><a href="mailto:harini.avs1@gmail.com?subject=UX%20Portfolio%20Contact">Email</a>
-          <span class="dot">•</span><a href="https://www.linkedin.com/in/harini-avs103/" target="_blank" rel="noreferrer noopener">LinkedIn</a>
-        </div>
-        <p>© 2026 Harini Amperayani</p>
-      </div>
-    </footer>
   </div>
 </body>
 </html>

@@ -5,41 +5,55 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Contact | Harini</title>
   <meta name="description" content="Get in touch with Harini Amperayani for UX and UI collaboration." />
-  <link rel="stylesheet" href="../assets/css/style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../assets/css/style.css?v=20260824-header" />
   <script defer src="../assets/js/main.js"></script>
 </head>
-<body>
+<body class="contact-page">
   <div class="page">
-    <header>
-      <div class="container top-nav">
-        <a class="brand identity-brand" href="/" aria-label="Harini home">
-          <img class="brand-logo" src="../assets/img/2.png" alt="" />
-          <span class="brand-text">
-            <span class="brand-name">Harini Amperayani</span>
-            <span class="brand-title">UI/UX Designer</span>
+    <header class="home-header">
+      <div class="home-shell top-nav">
+        <a class="home-brand" href="../index.html" aria-label="Harini Amperayani home">
+          <span class="home-brand-name" aria-hidden="true">
+            <span>H</span><span>A</span><span>R</span><span>I</span><span>N</span><span>I</span>
+          </span>
+          <span class="home-brand-surname" aria-hidden="true">
+            <span>A</span><span>M</span><span>P</span><span>E</span><span>R</span><span>A</span><span>Y</span><span>A</span><span>N</span><span>I</span>
           </span>
         </a>
-        <nav class="menu" aria-label="Main">
-          <a href="/">Home</a>
-          <a href="/resume/">Resume</a>
-          <a href="/projects/">My work</a>
-          <a href="/contact/" aria-current="page">Contact</a>
+        <nav class="home-menu" aria-label="Main">
+          <a href="../index.html">Home</a>
+          <a href="../projects/index.html">My work</a>
+          <a href="../resume/index.html">About me</a>
+          <a href="index.html" aria-current="page">Contact</a>
         </nav>
+        <details class="mobile-menu">
+          <summary aria-label="Open navigation">
+            <span></span>
+            <span></span>
+            <span></span>
+          </summary>
+          <nav aria-label="Mobile main">
+            <a href="../index.html">Home</a>
+            <a href="../projects/index.html">My work</a>
+            <a href="../resume/index.html">About me</a>
+            <a href="index.html" aria-current="page">Contact</a>
+          </nav>
+        </details>
       </div>
     </header>
 
-    <main class="container">
-      <section class="page-heading contact-heading">
-        <h1 class="section-title">Let’s connect.</h1>
-        <p>If my work feels aligned with your team or project, I’d be happy to hear from you.</p>
-      </section>
-
+    <main class="container contact-page-main">
       <section class="contact-wrap">
         <article class="contact-panel">
-          <h2>Open to UI/UX design opportunities, collaborations, and product design conversations.</h2>
+          <p class="eyebrow">Contact</p>
+          <h1>Let’s connect.</h1>
+          <h2>I’d love to hear from you.</h2>
           <div class="contact-actions">
             <a class="btn" href="mailto:harini.avs1@gmail.com?subject=UX%20Portfolio%20Contact">Email me</a>
-            <a class="btn btn-secondary" href="https://www.linkedin.com/in/harini-avs103/" target="_blank" rel="noreferrer noopener">LinkedIn</a>
+            <a class="btn btn-secondary preserve-case" href="https://www.linkedin.com/in/harini-avs103/" target="_blank" rel="noreferrer noopener">LinkedIn</a>
           </div>
         </article>
       </section>
