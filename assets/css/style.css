@@ -422,9 +422,39 @@ p {
 
 .case-gallery.app-screens {
   grid-template-columns: 1fr;
-  gap: 56px;
+  align-items: start;
+  gap: 42px;
   max-width: 900px;
   margin-inline: auto;
+}
+
+.case-gallery.app-screens img {
+  border: 1px solid rgba(215, 167, 142, 0.34);
+}
+
+.case-gallery.app-screens figure {
+  margin: 0;
+}
+
+.case-gallery.app-screens figcaption {
+  margin-bottom: 12px;
+  color: #f6d8c9;
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 0;
+  text-align: center;
+}
+
+.case-gallery.app-screens figure:not(.wide-screen) {
+  justify-self: center;
+}
+
+.case-gallery.app-screens figure:not(.wide-screen) img {
+  max-width: 360px;
+}
+
+.case-gallery.app-screens .wide-screen {
+  grid-column: 1 / -1;
 }
 
 .case-study-page {
@@ -1240,7 +1270,11 @@ body.contact-page {
   }
 
   .case-gallery.app-screens {
-    grid-template-columns: repeat(3, minmax(0, 1fr));
+    grid-template-columns: 1fr;
+  }
+
+  .case-gallery.app-screens .wide-screen {
+    grid-column: 1 / -1;
   }
 
   .work-card {
@@ -1367,12 +1401,16 @@ body.contact-page {
   }
 
   .case-gallery.app-screens {
-    max-width: 260px;
+    max-width: 320px;
     margin-inline: auto;
   }
 
   .case-gallery.app-screens {
     grid-template-columns: 1fr;
+  }
+
+  .case-gallery.app-screens .wide-screen {
+    grid-column: auto;
   }
 
   .case-gallery.wireframes {
