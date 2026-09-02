@@ -1667,6 +1667,8 @@ body.contact-page {
   .balance-diagram .diagram-operator,
   .scroll-states .diagram-arrow {
     width: 100%;
+    display: flex;
+    justify-content: center;
     justify-self: center;
     text-align: center;
   }
