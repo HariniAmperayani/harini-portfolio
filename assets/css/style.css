@@ -1666,7 +1666,9 @@ body.contact-page {
 
   .balance-diagram .diagram-operator,
   .scroll-states .diagram-arrow {
-    justify-self: start;
+    width: 100%;
+    justify-self: center;
+    text-align: center;
   }
 
   .related-grid-wire div {
@@ -1677,6 +1679,17 @@ body.contact-page {
     grid-template-columns: 84px minmax(0, 1fr);
     gap: 14px;
     margin-bottom: 18px;
+  }
+
+  .home-project-aside .work-tags {
+    flex-wrap: nowrap;
+    gap: 6px;
+  }
+
+  .home-project-aside .work-tags span {
+    padding: 6px 7px;
+    font-size: 10px;
+    white-space: nowrap;
   }
 
   .homepage-story-list {
