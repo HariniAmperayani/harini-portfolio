@@ -764,6 +764,14 @@ p {
   margin-bottom: 16px;
 }
 
+.article-wireframe .wire-layout aside {
+  padding-top: 88px;
+}
+
+.article-wireframe .wire-layout aside .wire-block {
+  margin-bottom: 72px;
+}
+
 .wire-footer {
   min-height: 72px;
   margin-top: 18px;
@@ -958,10 +966,12 @@ p {
   margin-top: 88px;
 }
 
+.recipe-bottom-row {
+  margin-top: 44px;
+}
+
 .recipe-bottom-ad {
-  width: min(390px, 100%);
   min-height: 54px;
-  margin: 44px auto 0;
 }
 
 .ad-format-diagram,
@@ -1825,6 +1835,12 @@ body.contact-page {
   line-height: 1;
   font-weight: 700;
   letter-spacing: 0;
+}
+
+.home-project-copy .eyebrow {
+  margin-bottom: 10px;
+  font-size: 10px;
+  letter-spacing: 0.16em;
 }
 
 .home-project-copy .home-project-title-long {
