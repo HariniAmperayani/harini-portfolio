@@ -1,10 +1,10 @@
 const cleanUrlMap = {
   "/index.html": "/",
   "/resume.html": "/resume/",
-  "/projects.html": "/projects/",
   "/contact.html": "/contact/",
   "/case-study-frugal.html": "/case-study-frugal/",
   "/case-study-publishing.html": "/case-study-publishing/",
+  "/case-study-recipe-shop.html": "/case-study-recipe-shop/",
 };
 
 const canCleanUrl = window.location.protocol === "http:" || window.location.protocol === "https:";
@@ -21,7 +21,7 @@ if (canCleanUrl && cleanPath) {
 document.addEventListener("DOMContentLoaded", () => {
   if (window.location.protocol === "file:") {
     const rootPath = window.location.pathname
-      .replace(/\/(case-study-frugal|case-study-publishing|projects|resume|contact)\/index\.html$/i, "/")
+      .replace(/\/(case-study-frugal|case-study-publishing|case-study-recipe-shop|resume|contact)\/index\.html$/i, "/")
       .replace(/\/index\.html$/i, "/");
 
     document.querySelectorAll('a[href^="/"]').forEach((link) => {
