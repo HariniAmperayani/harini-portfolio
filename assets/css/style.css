@@ -1237,6 +1237,10 @@ p {
   margin-inline: auto;
 }
 
+.ab-test-diagram > .diagram-operator {
+  align-self: center;
+}
+
 .ab-version {
   min-height: 100%;
   padding: 18px;
