@@ -1229,6 +1229,115 @@ p {
   min-height: 184px;
 }
 
+.ab-test-diagram {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto minmax(0, 1fr);
+  align-items: start;
+  gap: 16px;
+  margin-inline: auto;
+}
+
+.ab-version {
+  min-height: 100%;
+  padding: 18px;
+  border: 1px solid rgba(245, 242, 239, 0.16);
+  border-radius: 8px;
+  background: rgba(0, 0, 0, 0.18);
+}
+
+.ab-browser {
+  position: relative;
+  display: grid;
+  gap: 12px;
+  min-height: 320px;
+  margin-top: 16px;
+  padding: 14px;
+  overflow: hidden;
+  border: 1px solid rgba(245, 242, 239, 0.16);
+  border-radius: 8px;
+  background: rgba(0, 0, 0, 0.22);
+}
+
+.ab-browser::before {
+  content: "";
+  display: block;
+  height: 8px;
+  border-radius: 999px;
+  background:
+    linear-gradient(rgba(245, 242, 239, 0.42), rgba(245, 242, 239, 0.42)) 0 0 / 8px 8px no-repeat,
+    linear-gradient(rgba(245, 242, 239, 0.3), rgba(245, 242, 239, 0.3)) 16px 0 / 8px 8px no-repeat,
+    linear-gradient(rgba(245, 242, 239, 0.22), rgba(245, 242, 239, 0.22)) 32px 0 / 8px 8px no-repeat;
+}
+
+.ab-top-ad {
+  min-height: 92px;
+}
+
+.ab-summary {
+  color: #f6d8c9;
+  font-weight: 600;
+}
+
+.ab-nav,
+.ab-content {
+  display: grid;
+  place-items: center;
+  border: 1px solid rgba(245, 242, 239, 0.16);
+  background: rgba(245, 242, 239, 0.06);
+  color: rgba(245, 242, 239, 0.72);
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  line-height: 1.4;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.ab-nav {
+  min-height: 44px;
+}
+
+.ab-content {
+  min-height: 128px;
+}
+
+.ab-browser-sticky {
+  padding-bottom: 72px;
+}
+
+.ab-sticky-ad {
+  position: absolute;
+  right: 14px;
+  bottom: 14px;
+  left: 14px;
+  min-height: 44px;
+  margin: 0;
+  border-style: solid;
+}
+
+.ab-process {
+  grid-column: 1 / -1;
+  display: grid;
+  justify-items: center;
+  gap: 8px;
+  margin-top: 6px;
+  padding-top: 18px;
+  border-top: 1px solid rgba(245, 242, 239, 0.12);
+  color: rgba(245, 242, 239, 0.78);
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  line-height: 1.4;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.ab-step-arrow {
+  color: #f6d8c9;
+  font-size: 16px;
+  line-height: 1;
+}
+
 .solution-extra {
   margin-top: 16px;
 }
@@ -2067,6 +2176,7 @@ body.contact-page {
 
   .balance-diagram,
   .scroll-states,
+  .ab-test-diagram,
   .two-side-diagram,
   .journey-split-diagram,
   .connected-platform-diagram,
@@ -2083,6 +2193,7 @@ body.contact-page {
 
   .balance-diagram .diagram-operator,
   .connected-platform-diagram .diagram-operator,
+  .ab-test-diagram .diagram-operator,
   .scroll-states .diagram-arrow,
   .product-journey-diagram .diagram-arrow {
     width: 100%;
