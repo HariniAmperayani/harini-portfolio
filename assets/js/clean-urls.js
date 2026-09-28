@@ -21,7 +21,7 @@ if (canCleanUrl && cleanPath) {
 document.addEventListener("DOMContentLoaded", () => {
   if (window.location.protocol === "file:") {
     const rootPath = window.location.pathname
-      .replace(/\/(case-study-frugal|case-study-publishing|case-study-recipe-shop|resume|contact)\/index\.html$/i, "/")
+      .replace(/\/(case-study-frugal|case-study-publishing|case-study-recipe-shop|case-study-interviewos|resume|contact)\/index\.html$/i, "/")
       .replace(/\/index\.html$/i, "/");
 
     document.querySelectorAll('a[href^="/"]').forEach((link) => {

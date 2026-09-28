@@ -433,6 +433,17 @@ p {
   gap: 12px;
 }
 
+.case-study-frugal .case-hero .section-title,
+.case-study-interviewos .case-hero .section-title {
+  margin-bottom: 42px;
+}
+
+@media (min-width: 901px) {
+  .case-hero > .case-meta {
+    margin-top: 64px;
+  }
+}
+
 .case-meta h3 {
   margin: 0 0 4px;
   font-size: 14px;
@@ -1952,7 +1963,7 @@ body.contact-page {
 
 .home-project-copy .eyebrow {
   margin-bottom: 10px;
-  font-size: 10px;
+  font-size: 12px;
   letter-spacing: 0.16em;
 }
 
@@ -1978,6 +1989,21 @@ body.contact-page {
 .home-project-card .frugal-logo {
   width: 188px;
   border-radius: 38px;
+}
+
+.interviewos-logo-placeholder {
+  width: 188px;
+  max-width: 100%;
+  aspect-ratio: 1;
+  display: grid;
+  place-items: center;
+  padding: 20px;
+  border: 1px dashed rgba(215, 167, 142, 0.4);
+  border-radius: 38px;
+  background: rgba(215, 167, 142, 0.04);
+  color: rgba(245, 242, 239, 0.68);
+  font-size: 12px;
+  text-align: center;
 }
 
 .home-project-aside .work-tags {
