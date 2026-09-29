@@ -2386,6 +2386,7 @@ body.contact-page {
   }
 
   .home-project-card .frugal-logo,
+  .home-project-card .interviewos-logo-placeholder,
   .home-project-card .publishing-mark,
   .home-project-card .recipe-shop-mark {
     display: none;
@@ -2720,6 +2721,10 @@ body.contact-page {
   .home-project-card {
     margin-top: 32px;
     gap: 24px;
+  }
+
+  .home-project-card + .home-project-card {
+    margin-top: 64px;
   }
 
   .home-project-aside {
