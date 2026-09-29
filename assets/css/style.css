@@ -2261,7 +2261,7 @@ body.contact-page {
   }
 
   .home-project-aside .work-tags {
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     gap: 6px;
   }
 
@@ -2377,12 +2377,23 @@ body.contact-page {
     width: min(100% - 44px, 760px);
     min-height: auto;
     padding: 64px 0;
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .home-section-card,
+  .home-section-card > *,
+  .home-project-card > * {
+    min-width: 0;
+  }
+
+  .home-project-copy {
+    overflow-wrap: anywhere;
   }
 
   .home-project-card,
   .home-about-card,
   .home-contact-card {
-    grid-template-columns: 1fr;
+    grid-template-columns: minmax(0, 1fr);
   }
 
   .home-project-card .frugal-logo,
